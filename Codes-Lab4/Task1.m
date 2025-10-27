@@ -5,7 +5,8 @@ addpath("library_p\");
 
 % Load the input image
 lorem_img = imread('lorem_img.png');
- 
+lorem_img = transpose(lorem_img);
+
 % display the raw image
 figure(1); clf;
 imshow(lorem_img);

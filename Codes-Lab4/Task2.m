@@ -22,7 +22,7 @@ rlen_list = [0:10,255];
 figure(2);clf;
 hist = histogram(runs,rlen_list,'Normalization','probability','Visible','off');
 % show the probability
-prob = hist.Values
+prob = hist.Values;
 % show the probability using the function bar 
 bar([0:10],prob); xlabel('run length'); ylabel('Probability');
 set(gca,'XTickLabel',{'0','1','2','3','4','5','6','7','8','9','>=10'});
@@ -30,8 +30,7 @@ title('Histogram of the runs from 0 to 9 and >= 10');
 
 
      % % % % Revise the following code to generate a valid  and efficient dictionary   % % % %  
-     dict = {[0 0 0 0], [0 0 0 1], [0 0 1 0], [0 0 1 1], [0 1 0 0],...
-         [0 1 0 1], [0 1 1 0], [0 1 1 1], [1 0 0 0], [1 0 0 1],[1 0 1 0]};
+     dict = {[0 0 0 0 1 0 1 1], [1], [0 0 1], [0 1 0], [0 1 1], [0 0 0 1 0], [0 0 0 0 1 1], [0 0 0 0 0 ], [0 0 0 0 1 0 0 ], [0 0 0 0 1 0 1 0],[0 0 0 1 1]};
        
     % % % % Do not change the code below % % % %  
 
